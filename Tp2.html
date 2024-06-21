@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trabajo Nº2</title>
+  <title>Trabajo nº2</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+   
 
 <div class="container">
   <h2>Tabla de Alumnos</h2>
+  <button onclick="pedirBuscarAlumnos()">Buscar Alumnos</button>
+  <div id="resultado"></div>
+
+  <!--'CARD' utilizando estilo de Bootstrap para mostrar la cantidad de alumnos -->
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text" id="cantidadPrimaria"></p>
+        </div>
+      </div>
+    </div>
+</div>
+
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#pob">Pablacion</a></li>
+    <li class="active"><a data-toggle="pill" href="#pob">Poblacion</a></li>
     <li><a data-toggle="pill" href="#Frec">Frecuencia</a></li>
     <li><a data-toggle="pill" href="#Est">Estadistico</a></li>
   </ul>
   
+  <!-- Tabla de Poblacion -->
   <div class="tab-content">
     <div id="pob" class="tab-pane fade in active">
       <h3>Tabla de Poblacion</h3>
-      <p>Inserto tabla de poblacion total</p>
-      <table id="miTabla" class="table">
-        <thead class="table-primary">
-            <tr>
-                <th>ID</th>
-                <th>Apellido</th>
-                <th>Nombre</th>
-                <th>Curso</th>
-                <th>ID Curso</th>
-                <th>Nivel</th>
-                <th>ID Nivel</th>
-            </tr>
-        </thead>
-        <!--En el tbody se insertar los alumnos cuando se ejecute el boton-->
-        <tbody>
-        </tbody>
+  <table id="miTabla" class="table">
+      <thead class="table-primary">
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Curso</th>
+              <th>Nivel</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
+  </table>    
+  </div>
 
-    </table>  
-
-
-    </div>
+  <!-- Tabla de Frecuencia -->
     <div id="Frec" class="tab-pane fade">
       <h3>Tabla de Frecuencia</h3>
-      <p>Inserto tabla de frecuencia</p>
+      <!-- Tabla 1 -->
+      <p>Nivel Educativo</p>
+      <table id="miTablaFrecEst" class="table">
+        <thead class="table-primary">
+            <tr>
+                <th>Frecuencia Absoluta</th>
+                <th>Frecuencia Acumulada</th>
+                <th>Frecuencia Relativa</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+        <!-- Tabla 2 -->
+      <p>Nivel Secundario</p>
+      <table id="miTablaFrecSec" class="table">
+        <thead class="table-primary">
+            <tr>
+              <th>Frecuencia Absoluta</th>
+              <th>Frecuencia Acumulada</th>
+              <th>Frecuencia Relativa</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
+
+    <!-- Tabla de Estadistico -->
     <div id="Est" class="tab-pane fade">
       <h3>Tabla de estadisticos</h3>
-      <p>Inserto tabla de estadisticos</p>
+      <p>Edades</p>
+      <table id="miTablaEst" class="table">
+        <thead class="table-primary">
+          <tr>
+                <th>Media</th>
+                <th>Mediana</th>
+                <th>Valor Max</th>
+                <th>Valor Min</th>
+                <th>Primer Cuartil</th>
+                <th>Segundo Cuartil</th>
+                <th>Desvío Estándar</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>   
     </div>
   </div>
 </div>
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js tp2.js"></script>
 </body>
 </html>
