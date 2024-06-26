@@ -3,9 +3,9 @@
 <head>
   <title>Trabajo nº2</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
 
 <div class="container">
   <h2>Tabla de Alumnos</h2>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="pill" href="#pob">Poblacion</a></li>
@@ -33,44 +33,44 @@
   <div class="tab-content">
     <div id="pob" class="tab-pane fade in active">
       <h3>Tabla de Poblacion</h3>
-  <table id="miTabla" class="table">
-      <thead class="table-primary">
-          <tr>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Curso</th>
-              <th>Nivel</th>
-          </tr>
-      </thead>
-      <tbody></tbody>
-  </table>    
-  </div>
-
-  <!-- Tabla de Frecuencia -->
-    <div id="Frec" class="tab-pane fade">
-      <h3>Tabla de Frecuencia</h3>
-      <!-- Tabla 1 -->
-      <p>Nivel Educativo</p>
-      <table id="miTablaFrecEst" class="table">
+      <table id="miTabla" class="table">
         <thead class="table-primary">
-            <tr>
-                <th>Frecuencia Absoluta</th>
-                <th>Frecuencia Acumulada</th>
-                <th>Frecuencia Relativa</th>
-            </tr>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Curso</th>
+            <th>Nivel</th>
+          </tr>
         </thead>
         <tbody></tbody>
-      </table>
-        <!-- Tabla 2 -->
-      <p>Nivel Secundario</p>
-      <table id="miTablaFrecSec" class="table">
+      </table>    
+    </div>
+
+    <!-- Tabla de Frecuencia -->
+    <div id="Frec" class="tab-pane fade">
+      <h3>Tabla de Frecuencia</h3>
+      <h4>Nivel Educativo</h4>
+      <table id="tablaFrecuenciaNivel" class="table">
         <thead class="table-primary">
-            <tr>
-              <th>Frecuencia Absoluta</th>
-              <th>Frecuencia Acumulada</th>
-              <th>Frecuencia Relativa</th>
-            </tr>
+          <tr>
+            <th>Valor</th>
+            <th>Frecuencia Absoluta</th>
+            <th>Frecuencia Acumulada</th>
+            <th>Frecuencia Relativa</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>  
+      <h4>Curso (Nivel Secundario)</h4>
+      <table id="tablaFrecuenciaCurso" class="table">
+        <thead class="table-primary">
+          <tr>
+            <th>Valor</th>
+            <th>Frecuencia Absoluta</th>
+            <th>Frecuencia Acumulada</th>
+            <th>Frecuencia Relativa</th>
+          </tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -79,17 +79,16 @@
     <!-- Tabla de Estadistico -->
     <div id="Est" class="tab-pane fade">
       <h3>Tabla de estadisticos</h3>
-      <p>Edades</p>
       <table id="miTablaEst" class="table">
         <thead class="table-primary">
           <tr>
-                <th>Media</th>
-                <th>Mediana</th>
-                <th>Valor Max</th>
-                <th>Valor Min</th>
-                <th>Primer Cuartil</th>
-                <th>Segundo Cuartil</th>
-                <th>Desvío Estándar</th>
+            <th>Media</th>
+            <th>Mediana</th>
+            <th>Valor Max</th>
+            <th>Valor Min</th>
+            <th>Primer Cuartil</th>
+            <th>Segundo Cuartil</th>
+            <th>Desvío Estándar</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -100,6 +99,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="js tp2.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
