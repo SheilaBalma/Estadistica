@@ -1,3 +1,81 @@
-.table{
-    border: 1px;
-}
+#miTabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #miTabla th, #miTabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #miTabla th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las tablas de frecuencias */
+  .table-frecuencia {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table-frecuencia th, .table-frecuencia td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-frecuencia th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las estadísticas */
+  #miTablaEst {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #miTablaEst th, #miTablaEst td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #miTablaEst th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para el botón */
+  #btnBuscar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  #btnBuscar:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para el modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .modal-header, .modal-body {
+    padding: 10px 20px;
+  }
+  
+  .modal-footer {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+  }
